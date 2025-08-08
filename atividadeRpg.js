@@ -141,3 +141,39 @@ if (encontrouAliado) {
 } else {
     console.log (`A heroina seguiu seu caminho solitário pela floresta úmida e escura confiando em seus instintos, forçando-se a acreditar que logo chegaria à reposta que salvaria o reino.`)
 }
+
+// CAPÍTULO III
+let repostaEnigma = "tempo";
+let temChave = true;
+let inimigosPerseguindo = false;
+
+console.log (`🌟 CAPÍTULO III: Ártemis, chegando diante do antigo templo da Ordem de Arkenfell, agora corrompido pelas sombras, estava sob domínio de Malakar, o Ancião do Mal e seus comensais. O portão sagrado estava selado por uma magia poderosa que somente uma chave encantada pelo Mago das Luzes poderia abrir. `)
+
+if (!temChave) {
+    console.log (`Sem a chave em mãos, Ártemis era incapaz de atravessar o portal mágico. O mal continuaria a crescer e sua confiança diminuia a cada segundo. `);
+} else {
+    console.log (`${nome}, pensando que não poderia ser conhecidência, lembrou-se da chave dourada que o Ancião Andarilho havia lhe entregado na clareira. Utilizando a chave, ela foi recebida por um brilho intenso. Ela entrou no templo temendo por sua vida, mas determinada a cumprir sua missão.`);
+}
+
+console.log (`No coração do antigo santuário, a batalha foi intensa. Ártemis, apesar de poderosa, não conseguiria vencer a batalha contra tantos comensais e o poderoso Malakar sem ajuda...`);
+
+let concluiuMissao = true;
+
+if (famaEntrePovos >= 7) {
+    console.log (`Subitamente, de todas as direções, guerreiros fiéis aos Poderes da Natureza que protegiam as terras próximas sentiram a luz cirada por ${nome}, e conhecendo-a por sua mente bondosa e determinada se juntaram a ela na batalha. Com corações puros e armas afiadas, expulsaram todas as sombras do mal que lá habitavam, restaurando a antiga Ordem de Arkenfell com sucesso.`);
+    xp+= 100;
+    nivel++;
+    concluiuMissao = true;
+} else if (famaEntrePovos >=5 && !inimigosPerseguindo) {
+    console.log (`Subitamente, apesar de cautelosos, guerreiros que protegiam as terras próximas notaram o brilho intenso e seguiram a luz que emanava em seu caminho. Encontraram Ártemis e sentindo sua aura pura, perceberam que deviam ajudá-la. Com corações puros e armas afiadas, expulsaram todas as sombras do mal que lá habitavam, restaurando a antiga Ordem de Arkenfell com sucesso. `);
+    xp+= 50;
+    concluiuMissao = true;
+} else if (famaEntrePovos <6 && inimigosPerseguindo) {
+    console.log (`Com inimigos perseguindo-a e o brilho intenso indicando sua localização, ${nome} foi encontrada e atingida por uma lança de um dos guardas de Malakar. Rapidamente correndo e escondendo-se, conseguiu escapar, mas falhou em sua missão e as sombras tomaram o reino para sempre.`);
+    vida -=30;
+    concluiuMissao = false;
+} else {
+    console.log (`Exausta, não notando que tinha a chave em mãos e cercada de inimigos à espreita, Ártemis desistiu e durante a noite foi atacada por seus inimigos. Não percebeu que ainda havia esperança e que estava diante da vitória. Fracassou em sua missão e o reino foi sucumbido para as sombras por toda a eternidade.`);
+    vida -= 50;
+    concluiuMissao = false;
+}
