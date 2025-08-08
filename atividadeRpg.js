@@ -95,3 +95,21 @@ let missaoAtual = "Restaurar a Ordem de Arkenfell";
 // PRÓLOGO
 console.log (`🌟 PRÓLOGO: No Reino de Thalendor, Ártemis, ágil caçadora da natureza, precisá enfrentar diversos desafios para restaurar a ordem de Arkenfell em seu amado reino. Com a ajuda de seu encantado ${NOME_ARMA} e sua armadura ${NOME_ARMADURA}, forjados há séculos, destinados a acompanhá-la em sua missão e guiá-la em direção à glória, ela explorará a floresta Mystic Falls em busca de respostas e aliados. Será que ela se revelará a grande heroina do reino?`);
 
+// Capítulo I
+
+console.log (`🌟 CAPÍTULO I: Ao se embrenhar na misteriosa floresta de Mystic Falls, Ártemis se depara com três animais cujo nome ela não tinha ideia, mas uma coisa era certa: eram perigosos. Em uma fusão de escorpião com jaguar, as bestas de cinco metros, no mínimo, espumavam de raiva. Embora a heroina não estivesse com medo, escondeu-se atrás de uma grande rocha para que pudesse preparar seu arco com precisão. Assim, trocou suas flechas convencionais por flechas venenosas. Ártemis só tinha uma opção para continuar seu caminho: matá-los. Assim ela poderia ganhar 100xp e prosseguir sua jornada.`);
+
+let matarBesta = true
+if (matarBesta) {
+    xp +=100;
+    console.log (`Em golpes ágeis, Ártemis matou as três bestas e agora, com a recente adição de 100xp, acumulava um total de ${xp} xp.`);
+}
+
+let descansar = true
+if (descansar) {
+    vida += 20
+    if (vida > vidaMaxima) vida = vidaMaxima;
+    console.log (`Tendo cumprido sua missão diária, pôde parar para descansar na sombra de um grande carvalho e recuperar sua vida, que agora estava em ${vida}.`);
+}
+
+
