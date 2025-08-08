@@ -177,3 +177,10 @@ if (famaEntrePovos >= 7) {
     vida -= 50;
     concluiuMissao = false;
 }
+
+// EPÍLOGO
+
+if (concluiuMissao) {
+    console.log (`🌟 EPÍLOGO: Com a queda das sombras lideradas pelo Ancião Malakar e a restauração de Arkenfell, uma nova era começava em seu reino. A escuridão que uma vez assolou os cidadãos de Thalendor havia sido substituídas pela luz.`);
+    console.log (`${nome}, agora reconhecida pela Rainha Athena como heroina do reino, sabia que sua história não havia chegado ao fim. Era seu destino proteger o reino de todos os males. Enquanto as bandeiras de Thalendor tremulavam suavemente ao vento, ${nome} sentia que a natureza logo lhe traria outra missão, pois sua intuição a avisava de uma nova ameaça começava a se formar entre as sombras. Será que o mal realmente tinha sido exterminado? `);
+}; 
