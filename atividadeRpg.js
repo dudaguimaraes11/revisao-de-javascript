@@ -112,4 +112,32 @@ if (descansar) {
     console.log (`Tendo cumprido sua missão diária, pôde parar para descansar na sombra de um grande carvalho e recuperar sua vida, que agora estava em ${vida}.`);
 }
 
+// Capítulo II
+console.log (`🌟 CAPÍTULO II: Ao amanhecer do segundo dia de sua missão, ${nome} se levantou com os músculos ainda tensos, mas revitalizada. A noite fora tranquila e ela esperava que o dia que se seguisse revelasse grandes vitórias. Ao arrumar seus itens, a caçadora partiu para mais um dia de aventura. Após uma longa caminhada entre raíses e folhas úmidas, ${nome} se deparou com um dos piores destinos da floresta encantada: a Encruzilhada dos Lamentos. As lendas, mitos e boatos que ouvira sobre os três caminhos que estendiam-se a sua frente fizeram-na estremecer. Mas uma escolha tinha que ser feita, pois não restava alternativa.`);
 
+if (classe === "Guerreira") {
+    console.log(`O poder de seus antepassados, os mais poderosos guerreiros, flui através de suas veias incentivando-a a honrá-los. Com coragem no coração e mente aberta, ela seguiu em direção ao seu destino, confiante de que o legado de sua linhagem a guiaria.`);
+}
+
+if (xp >= 100) {
+console.log(`A experiência adquirida em seus ${combatesVencidos} combates anteriores revelou-se valiosa. Procurando rapidamente por sinais que a instruissem sobre o caminho correto, ela os encontrou. Sinais de proteção das Dríades da Natureza estavam marcados nas árvores da primeira trilha.`);
+nivel++;
+xp += 50;
+console.log (`Mostrando sua coragem, a heroina subiu para o próximo nível (nível ${nivel}).`)
+
+} else {
+    console.log (`${nome} ainda não havia experiência o sufiente para tomar essa decisão. No entanto, seguiu pelo caminho do meio e deparou-se com um nevoeiro mágico que a desorientou. ${nome} perdeu vida e energia, mas encontrou o caminho correto mais tarde.`);
+    vida -=30;
+    energia -=40;
+}
+
+let encontrouAliado = true;
+let famaEntrePovos = 5;
+
+if (encontrouAliado) {
+    console.log (`Após inúmeras horas caminhando, ${nome} chegou a uma clareira. Saindo das sombras, o Ancião Andarilho, conhecido no reino como Ledgher, ofereceu a guerreira uma poção de advertência sobre os perigos que se seguiriam à sua frente. Hesitou em aceitar. Mas, seguindo o seu coração, tomou a poção. Ganhou 50xp. Em seguida, sem dizer uma palavra, o Ancião entregou-lhe uma chave dourada. Mesmo sem entender, ${nome} confiou e seguiu seu caminho, mal sabendo que o Ancião enviaria ainda mais ajuda em sua jornada.`);
+    xp+=50;
+    famaEntrePovos += 2;
+} else {
+    console.log (`A heroina seguiu seu caminho solitário pela floresta úmida e escura confiando em seus instintos, forçando-se a acreditar que logo chegaria à reposta que salvaria o reino.`)
+}
